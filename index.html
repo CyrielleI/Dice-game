@@ -12,24 +12,24 @@
 <body>
     <div id="app" class="container-fluid">
         <div class="row">
-            <div id="player1" class="col-md-6">
+            <div id="player1" class="col-md-6  player-active">
                <div class="global">
-                    <div>PLAYER 1</div>
-                    <div class="globalscore">0</div>
+                    <div class="title">PLAYER 1</div>
+                    <div class="globalscore" id="global-score-player-1">0</div>
                 </div>    
                <div class="current">
                    <div>current</div>
-                   <div>0</div>
+                   <div id="score-player-1">0</div>
                </div>
             </div>
             <div id="player2" class="col-md-6">
                 <div class="global">
-                    <div>PLAYER 2</div>
-                    <div class="globalscore">0</div>
+                    <div class="title">PLAYER 2</div>
+                    <div class="globalscore" id="global-score-player-2">0</div>
                 </div>    
-               <div class="current">
+               <div class="current" >
                    <div>current</div>
-                   <div>0</div>
+                   <div id="score-player-2">0</div>
                </div>
             </div>
         </div>  
@@ -39,7 +39,7 @@
                 <span>NEW GAME</span>
             </div>
             <div id="dice">
-                <img src="/assets/images/1.jpg" alt="dice"></img>
+                <img src="/assets/images/1.jpg" alt="dice"/>
             </div>
             <div>
                 <div id="rolldice">
