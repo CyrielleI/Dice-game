@@ -11,7 +11,7 @@ var globalPlayer2 = 0;
 
 rollDice.addEventListener('click', ()=> {
     var randomNumber = Math.floor(Math.random()*6) + 1;
-    dice.innerHTML = '<img src="/assets/images/'+randomNumber+'.jpg" alt="dice"/>';
+    dice.innerHTML = '<img src="assets/images/'+randomNumber+'.jpg" alt="dice"/>';
     var activePlayer = document.querySelector('.player-active');
     if (randomNumber === 1) {
         currentPlayer1 = 0;
