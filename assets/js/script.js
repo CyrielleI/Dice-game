@@ -85,9 +85,7 @@ function resetCurrentPoints() {
 function winner() {
     if (globalPlayer1 >= 100) {
         alert('Player 1 win with ' + globalPlayer1 +' points!');
-        playNewGame;
     } else if (globalPlayer2 >= 100) {
         alert('Player 2 win with ' + globalPlayer2 +' points!');
-        playNewGame;
     }
 }
