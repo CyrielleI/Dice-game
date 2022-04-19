@@ -9,6 +9,8 @@ var globalPlayer1 = 0;
 var currentPlayer2 = 0;
 var globalPlayer2 = 0;
 
+alert("Règles du jeu : \n Le jeu comprend 2 joueurs sur un seul et même écran. \n Chaque joueur possède un score temporaire (current) et un score global.\n À chaque tour, le joueur a son ROUND initialisé à 0 et peut lancer un dé autant de fois qu'il le souhaite. Le résultat d’un lancer est ajouté au ROUND.\n Lors de son tour, le joueur peut décider à tout moment de:\n - Cliquer sur l’option “Hold”, qui permet d’envoyer les points du ROUND vers le GLOBAL. Ce sera alors le tour de l’autre joueur. \n - Lancer le dé. S’il obtient un 1, son score ROUND est perdu et c’est la fin de son tour.\n Le premier joueur qui atteint les 100 points sur global gagne le jeu.")
+
 rollDice.addEventListener('click', ()=> {
     var randomNumber = Math.floor(Math.random()*6) + 1;
     dice.innerHTML = '<img src="assets/images/'+randomNumber+'.jpg" alt="dice"/>';
