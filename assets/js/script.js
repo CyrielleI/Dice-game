@@ -94,9 +94,9 @@ function resetCurrentPoints() {
 };
 
 function checkWinner() {
-    if (globalPlayer1 >= 10) {
+    if (globalPlayer1 >= 100) {
         displayModalWinner('Player 1 wins the game !');
-    } else if (globalPlayer2 >= 10) {
+    } else if (globalPlayer2 >= 100) {
         displayModalWinner('Player 2 wins the game !');
     }
 }
