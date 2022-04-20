@@ -41,12 +41,10 @@ hold.addEventListener('click',()=> {
         globalPlayer1 += currentPlayer1;
         document.getElementById('global-score-player-1').innerHTML = globalPlayer1;
         switchActive();
-        console.log ('event hold'); 
     } else {
         globalPlayer2 += currentPlayer2;
         document.getElementById('global-score-player-2').innerHTML = globalPlayer2;
         checkWinner(); 
-        console.log ('event hold');
     }
     resetCurrentPoints();
     checkWinner();
@@ -59,7 +57,6 @@ newGame.addEventListener('click', ()=> {
 
 //  start of functions of application
 function playNewGame() {
-    console.log('New game');
 
     currentPlayer1 = currentPlayer2 = 0;
     document.getElementById('score-player-1').innerHTML = currentPlayer1;
@@ -98,10 +95,8 @@ function resetCurrentPoints() {
 
 function checkWinner() {
     if (globalPlayer1 >= 10) {
-        console.log ('function winner');
         displayModalWinner('Player 1 wins the game !');
     } else if (globalPlayer2 >= 10) {
-        console.log ('function winner');
         displayModalWinner('Player 2 wins the game !');
     }
 }
@@ -119,7 +114,6 @@ function hideModalRules() {
 
 //start functions of rules winner
 function displayModalWinner(message) {
-    console.log('function displaymodalwinner');
     document.querySelector('#js-modal-winner').classList.add('bg-active-winner');
     document.querySelector('#js-text').innerHTML = message;
 }
