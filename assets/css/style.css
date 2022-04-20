@@ -128,4 +128,96 @@ img {
   background-color: rgb(38, 138, 38);
   top: 25px;
   right: -20px;
+}
+
+.modal-bg {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.75);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  visibility: hidden;
+  opacity: 0;
+  z-index: 1;
+}
+.modal-bg .modal {
+  position: relative;
+  background-color: white;
+  width: 75%;
+  height: 75%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  padding: 5px 15px;
+  text-align: center;
+  border-radius: 15px;
+}
+.modal-bg .modal .btn-play {
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  cursor: pointer;
+  background: #0b5e0f;
+  color: #fff;
+  position: relative;
+  padding: 10px 30px;
+}
+
+.bg-active {
+  visibility: visible;
+  opacity: 1;
+  z-index: 1;
+}
+
+.modal-winner {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.75);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  visibility: hidden;
+  opacity: 0;
+  z-index: 1;
+}
+.modal-winner .modal-bg-winner {
+  position: relative;
+  background-color: white;
+  width: 35%;
+  height: 40%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  padding: 5px 15px;
+  text-align: center;
+  border-radius: 15px;
+}
+.modal-winner .modal-bg-winner i {
+  color: black;
+  width: 300px;
+}
+.modal-winner .modal-bg-winner .btn-winner {
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  cursor: pointer;
+  background: #0b5e0f;
+  color: #fff;
+  position: relative;
+  padding: 10px 30px;
+}
+
+.bg-active-winner {
+  visibility: visible;
+  opacity: 1;
+  z-index: 1;
 }/*# sourceMappingURL=style.css.map */
