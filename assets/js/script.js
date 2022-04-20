@@ -44,7 +44,8 @@ hold.addEventListener('click',()=> {
     } else {
         globalPlayer2 += currentPlayer2;
         document.getElementById('global-score-player-2').innerHTML = globalPlayer2;
-        checkWinner(); 
+        checkWinner();
+        switchActive(); 
     }
     resetCurrentPoints();
     checkWinner();
